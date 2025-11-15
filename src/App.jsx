@@ -10,9 +10,9 @@ function App() {
     <>
       {/* Lessons */}
       {/* <Lesson_02 /> */}
-      <Lesson_03 />
+      {/* <Lesson_03 /> */}
       {/* Homeworks */}
-      {/* <Homework_02 /> */}
+      <Homework_02 />
     </>
   );
 }

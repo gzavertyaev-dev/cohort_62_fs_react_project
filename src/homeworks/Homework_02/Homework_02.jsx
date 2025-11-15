@@ -7,7 +7,7 @@ function Homework_02() {
     <div className="homework02_page_wrapper">
       <SimpsonsCard />
       <SimpsonsCard />
-      <SimpsonsCard />
+      <SimpsonsCard /> 
     </div>
   );
 }
