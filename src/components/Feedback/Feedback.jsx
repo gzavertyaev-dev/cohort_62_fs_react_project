@@ -5,35 +5,46 @@ import Button from "../Button/Button";
 
 function Feedback() {
 
-    const [count, setCount] = useState(0);
+    
+    const [likes, setLikes] = useState(0);
+    const [dislikes, setDislikes] = useState(0);
 
-    const Like = () => {
-        setCount((prevValue) => {
-            return prevValue + 1;
-        });
-    }
+
+        const Like = () => {
+            setLikes((prevValue) => {
+                return prevValue + 1;
+            })
+                 
+        }
+    
 
         const Dislike = () => {
-            setCount((prevValue) => {
-                return prevValue - 1;
-            });
+            setDislikes((prevValue) => {
+                return prevValue + 1;
+            })
         }
+          
+    
 
         const Reset  = () => {
-            setCount(0);
+            setLikes(0);
+            setDislikes(0);
         }   
 
 
   return (
     
     <div className="feedback_wrapper">
-        <p className="count">{count}</p>
+        
         <div className="button_control">
             <Button name="Like" onClick={Like} />
+            <p className="count">{likes}</p>
         </div>
+        
 
         <div className="button_control">
             <Button name="Dislike" onClick={Dislike} />
+            <p className="count">{dislikes}</p>
         </div>
 
         <div className="button_control">
